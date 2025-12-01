@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Paradise Kitchen | Afro-Caribbean Fusion Dining & Premium Event Catering in London,England">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://paradisekitchenuk.com">
+
+    <title>Paradise Kitchen | Afro-Caribbean Dining & Events | London</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Paradise Kitchen | Afro-Caribbean Fusion & Events">
+    <meta property="og:description" content="Fine dining | Wedding packages | Funeral repasts | Birthdays | Bespoke events in Accra">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://paradisekitchenuk.com">
+    <meta property="og:image" content="https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=1200">
+    <meta property="og:image:alt" content="Afro-Caribbean fine dining at Paradise Kitchen, London">
+
+    <!-- Preconnect & Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Paradise Kitchen",
+      "description": "Afro-Caribbean fusion dining and premium event catering in London",
+      "url": "https://paradisekitchenrestaurantuk.com",
+      "telephone": "+44-778-499-8874",
+      "email": "paradisekitchen1@outlook.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "14 Adams Court",
+        "addressLocality": "Greater London",
+        "addressRegion": "London",
+        "addressCountry": "GB"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 51.509865,
+        "longitude": -0.118092
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "15:00",
+          "closes": "23:00"
+        }
+      ],
+      "servesCuisine": ["African", "Caribbean"],
+      "priceRange": "$$",
+      "hasMenu": "https://paradisekitchenrestaurantuk.com/menu"
+    }
+    </script>
+
+    <style>
+        :root {
+            --color-primary-dark: #1A1A1A;
+            --color-accent-gold: #D4AF37;
+            --color-accent-orange: #FF6B35;
+            --color-accent-green: #3D6647;
+            --color-text-light: #E0E0E0;
+            --color-bg-section: #111111;
+            --font-serif: 'Playfair Display', serif;
+            --font-sans: 'Montserrat', sans-serif;
+            --transition: all 0.3s ease;
+            --shadow: 0 4px 12px rgba(0,0,0,0.1);
+            --border-radius: 8px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: var(--font-sans); 
+            background: var(--color-primary-dark); 
+            color: var(--color-text-light); 
+            line-height: 1.6; 
+            overflow-x: hidden;
+        }
+        a { text-decoration: none; color: inherit; }
+        img { max-width: 100%; display: block; }
+        button { font-family: inherit; cursor: pointer; }
+
+        .skip-link {
+            position: absolute; top: -40px; left: 6px;
+            background: var(--color-accent-gold); color: #000;
+            padding: 10px; z-index: 1001; border-radius: 4px; font-weight: 600;
+            transition: top 0.3s;
+        }
+        .skip-link:focus { top: 6px; }
+
+        .sticky-header {
+            background: rgba(26, 26, 26, 0.98);
+            padding: 1rem 5%;
+            position: sticky; top: 0; z-index: 1000;
+            display: flex; justify-content: space-between; align-items: center;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        .logo img { height: 180px; width: 180px; }
+        .nav-desktop { display: flex; gap: 2rem; }
+        .nav-desktop a { 
+            color: var(--color-text-light); 
+            font-weight: 500; 
+            position: relative;
+            transition: var(--transition);
+        }
+        .nav-desktop a:hover, .nav-desktop a:focus { color: var(--color-accent-gold); }
+        .nav-desktop a::after {
+            content: ''; position: absolute; bottom: -5px; left: 0;
+            width: 0; height: 2px; background: var(--color-accent-gold); 
+            transition: width 0.3s;
+        }
+        .nav-desktop a:hover::after { width: 100%; }
+
+        .mobile-menu-btn { 
+            display: none; 
+            background: none; 
+            border: none; 
+            color: var(--color-text-light); 
+            font-size: 1.5rem; 
+            padding: 8px;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+        .mobile-menu-btn:hover, .mobile-menu-btn:focus {
+            background: rgba(255,255,255,0.1);
+        }
+        .nav-mobile { 
+            display: none; 
+            position: absolute; 
+            top: 100%; 
+            left: 0; 
+            width: 100%; 
+            background: rgba(26, 26, 26, 0.98); 
+            flex-direction: column; 
+            padding: 1rem; 
+            text-align: center; 
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        .nav-mobile.active { display: flex; }
+        .nav-mobile a { 
+            padding: 0.8rem 0; 
+            font-weight: 500; 
+            border-bottom: 1px solid rgba(255,255,255,0.1); 
+            transition: var(--transition);
+        }
+        .nav-mobile a:hover { 
+            color: var(--color-accent-gold); 
+            background: rgba(255,255,255,0.05);
+        }
+
+        .btn {
+            display: inline-block; 
+            padding: 12px 28px; 
+            border-radius: var(--border-radius);
+            font-weight: 600; 
+            text-align: center; 
+            transition: var(--transition);
+            margin: 10px 8px; 
+            border: none; 
+            min-height: 44px;
+            font-size: 1rem;
+        }
+        .gold-btn {
+            background: var(--color-accent-gold); 
+            color: #000;
+        }
+        .gold-btn:hover, .gold-btn:focus {
+            background: #f7d26b; 
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(212,175,55,0.4);
+        }
+        .outline-btn {
+            background: transparent;
+            border: 2px solid var(--color-accent-gold);
+            color: var(--color-accent-gold);
+        }
+        .outline-btn:hover, .outline-btn:focus {
+            background: var(--color-accent-gold);
+            color: #000;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(212,175,55,0.2);
+        }
+
+        .hero {
+            height: 90vh;
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+                        url('https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover no-repeat;
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            text-align: center; 
+            color: white;
+            position: relative;
+        }
+        .hero-content {
+            max-width: 800px;
+            padding: 0 20px;
+        }
+        .hero h1 { 
+            font-family: var(--font-serif); 
+            font-size: 4rem; 
+            margin-bottom: 1rem; 
+            color: var(--color-accent-gold);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .hero p { 
+            font-size: 1.3rem; 
+            margin: 0 auto 2rem; 
+            max-width: 600px;
+        }
+        .hero-btns {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        section { 
+            padding: 80px 5%; 
+            text-align: center; 
+        }
+        .section-light {
+            background: var(--color-primary-dark);
+        }
+        .section-dark {
+            background: var(--color-bg-section);
+        }
+        h2 { 
+            font-family: var(--font-serif); 
+            font-size: 2.8rem; 
+            color: var(--color-accent-gold); 
+            margin-bottom: 2rem; 
+        }
+        .section-subtitle {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            color: #ccc;
+        }
+
+        .services-grid {
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px; 
+            margin-top: 40px;
+        }
+        .service-card {
+            background: #222; 
+            padding: 30px; 
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(212,175,55,0.2); 
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .service-card:hover { 
+            transform: translateY(-10px); 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            border-color: var(--color-accent-gold);
+        }
+        .service-card h3 { 
+            color: var(--color-accent-gold); 
+            margin-bottom: 15px; 
+            font-size: 1.5rem;
+        }
+        .service-card p {
+            flex-grow: 1;
+            margin-bottom: 20px;
+        }
+
+        .gallery-grid {
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px; 
+            margin-top: 40px;
+        }
+        .gallery-item { 
+            overflow: hidden; 
+            border-radius: var(--border-radius); 
+            position: relative;
+        }
+        .gallery-item img { 
+            width: 100%; 
+            height: 300px; 
+            object-fit: cover; 
+            transition: transform 0.4s; 
+        }
+        .gallery-item:hover img { 
+            transform: scale(1.05); 
+        }
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: white;
+            padding: 20px;
+            transform: translateY(100%);
+            transition: var(--transition);
+        }
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        .contact-info { 
+            max-width: 700px; 
+            margin: 0 auto; 
+            font-size: 1.2rem; 
+        }
+        .contact-info p { 
+            margin: 15px 0; 
+        }
+        .contact-link { 
+            color: var(--color-accent-gold); 
+            transition: var(--transition); 
+        }
+        .contact-link:hover { 
+            color: #f7d26b; 
+        }
+
+        /* Modals */
+        .modal {
+            display: none; 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%;
+            background: rgba(0,0,0,0.9); 
+            z-index: 2000;
+            align-items: center; 
+            justify-content: center; 
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .modal.active {
+            display: flex;
+        }
+        .modal-content {
+            background: var(--color-primary-dark); 
+            padding: 40px; 
+            border-radius: 12px;
+            max-width: 600px; 
+            width: 100%; 
+            border: 2px solid var(--color-accent-gold);
+            position: relative; 
+            max-height: 90vh; 
+            overflow-y: auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .close-modal {
+            position: absolute; 
+            top: 15px; 
+            right: 20px; 
+            font-size: 2rem;
+            cursor: pointer; 
+            color: var(--color-accent-gold); 
+            background: none; 
+            border: none;
+            width: 40px; 
+            height: 40px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            transition: var(--transition);
+            border-radius: 50%;
+        }
+        .close-modal:hover, .close-modal:focus {
+            background: rgba(212,175,55,0.2);
+        }
+
+        .form-group { 
+            margin-bottom: 20px; 
+            text-align: left; 
+        }
+        .form-group label { 
+            display: block; 
+            margin-bottom: 8px; 
+            font-weight: 600; 
+        }
+        .form-control {
+            width: 100%; 
+            padding: 12px; 
+            border-radius: 6px;
+            border: 1px solid #444; 
+            background: #333; 
+            color: white;
+            font-family: inherit; 
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        .form-control:focus { 
+            outline: 2px solid var(--color-accent-gold); 
+            outline-offset: 2px; 
+            border-color: var(--color-accent-gold);
+        }
+        textarea.form-control { 
+            resize: vertical; 
+            min-height: 120px; 
+        }
+
+        .loading {
+            display: inline-block; 
+            width: 20px; 
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3); 
+            border-radius: 50%;
+            border-top-color: var(--color-accent-gold);
+            animation: spin 1s ease-in-out infinite; 
+            margin-right: 10px;
+        }
+        @keyframes spin { 
+            to { transform: rotate(360deg); } 
+        }
+
+        /* Enhanced Calendar */
+        .calendar {
+            width: 100%; 
+            margin-top: 20px; 
+            text-align: center;
+        }
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .calendar-month {
+            font-family: var(--font-serif);
+            font-size: 1.4rem;
+            color: var(--color-accent-gold);
+        }
+        .calendar-nav {
+            background: none;
+            border: none;
+            color: var(--color-text-light);
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+        .calendar-nav:hover {
+            background: rgba(212,175,55,0.2);
+        }
+        .calendar-scroll-container {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: thin;
+            scrollbar-color: var(--color-accent-gold) rgba(212,175,55,0.2);
+            padding: 8px 0;
+            margin: 0 -8px;
+            position: relative;
+        }
+        .calendar-scroll-container::-webkit-scrollbar {
+            height: 8px;
+        }
+        .calendar-scroll-container::-webkit-scrollbar-thumb {
+            background: var(--color-accent-gold);
+            border-radius: 4px;
+        }
+        .calendar-scroll-container::-webkit-scrollbar-track {
+            background: rgba(212,175,55,0.1);
+            border-radius: 4px;
+        }
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, minmax(48px, 1fr));
+            gap: 4px;
+            min-width: 100%;
+            padding: 0 8px;
+        }
+        .calendar-day-header {
+            font-weight: bold; 
+            font-size: 0.85rem; 
+            padding: 8px 0; 
+            color: #aaa;
+        }
+        .calendar-date {
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center;
+            min-width: 48px; 
+            min-height: 64px; 
+            border-radius: 6px;
+            font-weight: 600; 
+            font-size: 0.9rem; 
+            cursor: pointer;
+            transition: all 0.2s; 
+            padding: 4px;
+        }
+        .calendar-date.available { 
+            background: #2e7d32; 
+            color: white; 
+        }
+        .calendar-date.limited { 
+            background: #f57c00; 
+            color: white; 
+        }
+        .calendar-date.booked { 
+            background: #d32f2f; 
+            color: white; 
+            opacity: 0.7; 
+            cursor: not-allowed; 
+        }
+        .calendar-date.past { 
+            background: #444; 
+            color: #888; 
+            cursor: not-allowed; 
+        }
+        .calendar-date:not(.booked):not(.past):hover,
+        .calendar-date:not(.booked):not(.past):focus {
+            transform: scale(1.05);
+            outline: 2px solid var(--color-accent-gold);
+            outline-offset: 2px;
+        }
+        .calendar-scroll-container::before,
+        .calendar-scroll-container::after {
+            content: ''; 
+            position: absolute; 
+            top: 0; 
+            bottom: 0; 
+            width: 20px; 
+            pointer-events: none; 
+            z-index: 1;
+        }
+        .calendar-scroll-container::before {
+            left: 0;
+            background: linear-gradient(to right, rgba(26,26,26,1) 0%, rgba(26,26,26,0) 100%);
+        }
+        .calendar-scroll-container::after {
+            right: 0;
+            background: linear-gradient(to left, rgba(26,26,26,1) 0%, rgba(26,26,26,0) 100%);
+        }
+
+        /* Social Icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        .social-icons a {
+            color: var(--color-accent-green);
+            font-size: 2.2rem;
+            transition: all 0.3s ease;
+            padding: 14px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 72px;
+            height: 72px;
+            background: rgba(212, 175, 55, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .social-icons a:hover,
+        .social-icons a:focus { 
+            color: var(--color-accent-gold); 
+            transform: translateY(-6px);
+            background: rgba(212, 175, 55, 0.15);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        /* Testimonials */
+        .testimonials {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .testimonial-card {
+            background: #222;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(212,175,55,0.2);
+            text-align: left;
+            position: relative;
+        }
+        .testimonial-card::before {
+            content: """;
+            font-family: Georgia, serif;
+            font-size: 4rem;
+            color: var(--color-accent-gold);
+            opacity: 0.3;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            line-height: 1;
+        }
+        .testimonial-text {
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--color-accent-gold);
+        }
+        .testimonial-name {
+            font-weight: 600;
+            color: var(--color-accent-gold);
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 5% 30px;
+            text-align: center;
+            background: #111;
+            border-top: 1px solid rgba(212,175,55,0.2);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .sticky-header { padding: 1rem; }
+            .nav-desktop { display: none; }
+            .mobile-menu-btn { display: block; }
+            .hero h1 { font-size: 2.8rem; }
+            .hero p { font-size: 1.1rem; }
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero-btns .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            h2 { font-size: 2.2rem; }
+            .modal-content { padding: 30px 20px; }
+            .calendar-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.8rem; }
+            .btn { padding: 14px 20px; margin: 8px 4px; width: 100%; }
+            .logo img { height: 45px; }
+            .calendar-month { font-size: 1.2rem; }
+            .calendar-date { min-height: 60px; font-size: 0.85rem; }
+            .calendar-day-header { font-size: 0.75rem; }
+            .social-icons a {
+                width: 60px;
+                height: 60px;
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header class="sticky-header">
+        <a href="https://paradisekitchenrestaurantuk.netlify.app/" class="logo" aria-label="Paradise Kitchen homepage">
+            <img src="https://image2url.com/images/1764506411486-831da419-dfef-45d1-9985-ca73bb6a0320.jpg" alt="Paradise Kitchen Logo" width="180" height="180">
+        </a>
+        <nav class="nav-desktop" aria-label="Main navigation">
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+        <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="nav-mobile" id="mobile-nav" aria-label="Mobile navigation">
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Paradise Kitchen</h1>
+                <p>Afro-Caribbean Fusion Dining & Premium Event Experiences in the Heart of London</p>
+                <div class="hero-btns">
+                    <a href="#inquiry-modal" class="btn gold-btn">Book Your Event</a>
+                    <a href="#contact" class="btn outline-btn">Visit Us</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section-light">
+            <h2>About Us</h2>
+            <p class="section-subtitle">
+                Paradise Kitchen is where the soul of Africa meets the spirit of the Caribbean. 
+                Founded with a passion for bold flavors and heartfelt hospitality, we offer exceptional 
+                fine dining and bespoke catering for life's most important moments — weddings, funerals, 
+                birthdays, and custom celebrations.
+            </p>
+        </section>
+
+        <section id="services" class="section-dark">
+            <h2>Our Services</h2>
+            <p class="section-subtitle">From intimate dinners to grand celebrations, we create unforgettable culinary experiences</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Wedding Packages</h3>
+                    <p>Elegant Afro-Caribbean menus, stunning presentation, and seamless service for your special day.</p>
+                    <a href="#inquiry-modal" class="btn gold-btn">Book Wedding</a>
+                </div>
+                <div class="service-card">
+                    <h3>Funeral Repasts</h3>
+                    <p>Dignified, comforting meals with traditional and fusion options to honor your loved one.</p>
+                    <a href="#inquiry-modal" class="btn gold-btn">Book Repast</a>
+                </div>
+                <div class="service-card">
+                    <h3>Birthday Celebrations</h3>
+                    <p>From intimate dinners to grand parties — make every birthday unforgettable.</p>
+                    <a href="#inquiry-modal" class="btn gold-btn">Book Birthday</a>
+                </div>
+                <div class="service-card">
+                    <h3>Bespoke Packages</h3>
+                    <p>Corporate events, anniversaries, baby namings — tell us your vision, we create magic.</p>
+                    <a href="#inquiry-modal" class="btn gold-btn">Speak to Us</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section-light">
+            <h2>Gallery</h2>
+            <p class="section-subtitle">A glimpse of our culinary creations and event setups</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.OvTo_rSLWL3pcc8eGdStcAHaFj?rs=1&pid=ImgDetMain&o=7&rm=3.wemp" 
+                         alt="Catering at Paradise Kitchen" loading="lazy" onclick="openModal(this.src)">
+                    <div class="gallery-overlay">
+                        <h3>Event Catering</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.yJWXYZBQ3z7UXKv3Wy_7QgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3.jpeg" 
+                         alt="Traditional Afro-Caribbean Foods at Paradise Kitchen restaurant" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Traditional Afro-Caribbean Cuisine</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.knedir.com/wp-content/uploads/2024/11/7k-2.jpg" 
+                         alt="Beautifully plated Caribbean Jerk Chicken with Rice" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Signature Dishes</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section-dark">
+            <h2>Testimonials</h2>
+            <p class="section-subtitle">What our clients say about their Paradise Kitchen experience</p>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Paradise Kitchen made our wedding day absolutely magical. The food was exquisite, and the service was impeccable. Our guests are still talking about it!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Ama and Kwame" class="testimonial-avatar">
+                        <div>
+                            <div class="testimonial-name">Ama & Ajani</div>
+                            <div>Wedding Clients</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "During a difficult time, Paradise Kitchen provided a beautiful, comforting meal for our family. The care and attention to detail meant so much to us."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Kofi Mensah" class="testimonial-avatar">
+                        <div>
+                            <div class="testimonial-name">Kofi Anton</div>
+                            <div>Funeral Repast</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "The fusion flavors are incredible! I've never tasted anything like it. Paradise Kitchen has become our go-to for special occasions."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/718978/pexels-photo-718978.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Esi Johnson" class="testimonial-avatar">
+                        <div>
+                            <div class="testimonial-name">Esi Johnson</div>
+                            <div>Regular Customer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-light">
+            <h2>Contact Us</h2>
+            <p class="section-subtitle">Get in touch to discuss your event or make a reservation</p>
+            <div class="contact-info">
+                <p><strong>Address:</strong> 14 Adams Court, London</p>
+                <p><strong>Phone:</strong> <a href="tel:+447784998874" class="contact-link">+44-778-499-8874</a></p>
+                <p><strong>WhatsApp:</strong> <a href="https://wa.me/447784998874" class="contact-link">Chat with us</a></p>
+                <p><strong>Email:</strong> <a href="mailto:paradisekitchen1@outlook.com" class="contact-link">paradisekitchen1@outlook.com</a></p>
+                <p><strong>Opening Hours:</strong> Tuesday – Sunday, 3:00 PM – 11:00 PM</p>
+                <br>
+                <a href="#inquiry-modal" class="btn gold-btn">Send Us a Message</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Availability Calendar Modal -->
+    <div id="calendar-modal" class="modal" role="dialog" aria-labelledby="calendar-title" aria-modal="true" tabindex="-1">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Close calendar">&times;</button>
+            <h3 id="calendar-title" style="color:var(--color-accent-gold);">Check Availability</h3>
+            <p>Select your preferred date. ✅ = Available, 🟡 = Limited, 🔴 = Booked</p>
+            <div id="calendar-container" class="calendar"></div>
+            <p style="font-size:0.85rem;margin-top:12px;color:#888;">
+                ✅ Available &nbsp; 🟡 Limited &nbsp; 🔴 Booked
+            </p>
+        </div>
+    </div>
+
+    <!-- Inquiry Modal -->
+    <div id="inquiry-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-modal="true" tabindex="-1">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Close modal">&times;</button>
+            <h3 id="modal-title" style="color:var(--color-accent-gold);margin-bottom:20px;">Let's Create Something Beautiful</h3>
+            <form id="inquiry-form" name="inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="inquiry" />
+                <div class="form-group" style="display:none">
+                    <label for="bot-field">Don't fill this out:</label>
+                    <input type="text" name="bot-field" />
+                </div>
+
+                <div class="form-group">
+                    <label for="event-date">Preferred Event Date *</label>
+                    <div style="display:flex;gap:10px;flex-wrap:wrap;">
+                        <input type="text" id="event-date" name="event-date" class="form-control" placeholder="Click to select date" readonly required style="flex:1;min-width:200px;">
+                        <button type="button" id="open-calendar-btn" class="btn gold-btn" style="padding:12px 16px;min-height:auto;white-space:nowrap;">📅 Check Availability</button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email *</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone / WhatsApp *</label>
+                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="+Your Number" required autocomplete="tel">
+                </div>
+                <div class="form-group">
+                    <label for="service">I'm interested in...</label>
+                    <select id="service" name="service" class="form-control" required>
+                        <option value="">Please select</option>
+                        <option value="wedding">Wedding Package</option>
+                        <option value="funeral">Funeral Repast</option>
+                        <option value="birthday">Birthday Celebration</option>
+                        <option value="bespoke">Bespoke Event</option>
+                        <option value="general">General Inquiry</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Estimated Guests</label>
+                    <input type="number" id="guests" name="guests" class="form-control" placeholder="e.g. 50" min="1">
+                </div>
+                <div class="form-group">
+                    <label for="message">Tell us about your event</label>
+                    <textarea id="message" name="message" class="form-control" placeholder="Special requests, theme, venue, etc."></textarea>
+                </div>
+                <button type="submit" class="btn gold-btn" style="width:100%;padding:14px;font-size:1.1rem;" id="submit-btn">
+                    <span id="btn-text">Send Booking Request</span>
+                    <span id="btn-loading" class="loading" style="display:none;"></span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://instagram.com/paradisekitchen_uk" aria-label="Follow us on Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/256787657665" aria-label="Chat with us on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://facebook.com/paradisekitchenuk" aria-label="Like us on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <p style="margin-top:30px;color:#888;">© <span id="year"></span> Paradise Kitchen. All Rights Reserved.</p>
+        <p style="margin-top:10px;color:#666;font-size:0.9rem;">Email: paradisekitchen1@outlook.com</p>
+    </footer>
+
+    <script>
+        // ==== Dynamic Year ====
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // ==== Mobile Menu ====
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        mobileMenuBtn.addEventListener('click', () => {
+            const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+            mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
+            mobileNav.classList.toggle('active');
+            
+            // Update icon
+            const icon = mobileMenuBtn.querySelector('i');
+            if (mobileNav.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-mobile a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // ==== Modal Management ====
+        const modals = document.querySelectorAll('.modal');
+        let activeModal = null;
+
+        function openModal(modalId) {
+            // Close any currently open modal
+            if (activeModal) {
+                closeModal(activeModal);
+            }
+            
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                activeModal = modal;
+                
+                // Focus management
+                const focusableElements = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+                if (focusableElements.length > 0) {
+                    focusableElements[0].focus();
+                }
+                
+                // Add event listeners for closing
+                modal.addEventListener('click', handleModalClick);
+                document.addEventListener('keydown', handleEscapeKey);
+            }
+        }
+
+        function closeModal(modal) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+            activeModal = null;
+            
+            // Remove event listeners
+            modal.removeEventListener('click', handleModalClick);
+            document.removeEventListener('keydown', handleEscapeKey);
+        }
+
+        function handleModalClick(e) {
+            if (e.target === activeModal || e.target.classList.contains('close-modal')) {
+                closeModal(activeModal);
+            }
+        }
+
+        function handleEscapeKey(e) {
+            if (e.key === 'Escape' && activeModal) {
+                closeModal(activeModal);
+            }
+        }
+
+        // Set up modal triggers
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            const href = link.getAttribute('href');
+            if (href.startsWith('#') && href !== '#') {
+                const targetId = href.substring(1);
+                if (document.getElementById(targetId) && document.getElementById(targetId).classList.contains('modal')) {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        openModal(targetId);
+                    });
+                }
+            }
+        });
+
+        // Calendar button in form
+        document.getElementById('open-calendar-btn').addEventListener('click', () => {
+            if (activeModal) {
+                closeModal(activeModal);
+            }
+            openModal('calendar-modal');
+            renderCalendar('calendar-container', (dateStr) => {
+                const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+                document.getElementById('event-date').value = new Date(dateStr).toLocaleDateString('en-GH', options);
+                closeModal(document.getElementById('calendar-modal'));
+                openModal('inquiry-modal');
+            });
+        });
+
+        // ==== Availability Data (UPDATE THIS MONTHLY!) ====
+        const availabilityData = {
+            // Example: December 2025 — replace with real data
+            '2025-12-01': 'available',
+            '2025-12-02': 'available',
+            '2025-12-03': 'available',
+            '2025-12-04': 'limited',
+            '2025-12-05': 'booked',
+            '2025-12-06': 'available',
+            '2025-12-07': 'available',
+            '2025-12-08': 'booked',
+            '2025-12-14': 'limited',
+            '2025-12-15': 'booked',
+            '2025-12-20': 'available',
+            '2025-12-21': 'available',
+            '2025-12-22': 'booked',
+            '2025-12-23': 'booked',
+            '2025-12-24': 'booked',
+            '2025-12-25': 'booked',
+            '2025-12-26': 'booked',
+            '2025-12-27': 'limited',
+            '2025-12-28': 'available',
+            '2025-12-29': 'available',
+            '2025-12-30': 'booked',
+            '2025-12-31': 'booked'
+        };
+
+        // ==== Enhanced Calendar Renderer ====
+        let currentCalendarDate = new Date();
+        
+        function renderCalendar(containerId, onSelectDate) {
+            const container = document.getElementById(containerId);
+            const year = currentCalendarDate.getFullYear();
+            const month = currentCalendarDate.getMonth();
+
+            const monthNames = ["January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"];
+            const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+            const firstDay = new Date(year, month, 1);
+            const lastDay = new Date(year, month + 1, 0);
+            const daysInMonth = lastDay.getDate();
+            const startDayOfWeek = firstDay.getDay();
+
+            const days = [];
+            for (let i = 0; i < startDayOfWeek; i++) days.push(null);
+            for (let day = 1; day <= daysInMonth; day++) days.push(day);
+
+            let html = `
+                <div class="calendar-header">
+                    <button class="calendar-nav" id="prev-month" aria-label="Previous month">&#8249;</button>
+                    <h3 class="calendar-month">${monthNames[month]} ${year}</h3>
+                    <button class="calendar-nav" id="next-month" aria-label="Next month">&#8250;</button>
+                </div>
+                <div class="calendar-scroll-container">
+                    <div class="calendar-grid">`;
+
+            dayNames.forEach(day => {
+                html += `<div class="calendar-day-header">${day}</div>`;
+            });
+
+            days.forEach((day, index) => {
+                if (day === null) {
+                    html += `<div></div>`;
+                    return;
+                }
+
+                const date = new Date(year, month, day);
+                const dateStr = date.toISOString().split('T')[0];
+                const status = availabilityData[dateStr] || 'available';
+                const isPast = date < new Date().setHours(0,0,0,0);
+                
+                let className = 'calendar-date ';
+                if (isPast) className += 'past';
+                else className += status;
+
+                const symbol = status === 'available' ? '✅' : status === 'limited' ? '🟡' : '🔴';
+                
+                html += `
+                    <div class="${className}" 
+                         data-date="${dateStr}" 
+                         tabindex="${(!isPast && status !== 'booked') ? '0' : '-1'}"
+                         role="button"
+                         aria-label="${day} ${monthNames[month]} ${year}, ${status === 'available' ? 'Available' : status === 'limited' ? 'Limited availability' : 'Booked'}">
+                        <span>${day}</span>
+                        ${!isPast ? `<span aria-hidden="true">${symbol}</span>` : ''}
+                    </div>`;
+            });
+
+            html += `</div></div>
+                <p style="font-size:0.85rem;margin-top:12px;color:#888;">✅ Available &nbsp; 🟡 Limited &nbsp; 🔴 Booked</p>`;
+
+            container.innerHTML = html;
+
+            // Add month navigation
+            document.getElementById('prev-month').addEventListener('click', () => {
+                currentCalendarDate.setMonth(currentCalendarDate.getMonth() - 1);
+                renderCalendar(containerId, onSelectDate);
+            });
+            
+            document.getElementById('next-month').addEventListener('click', () => {
+                currentCalendarDate.setMonth(currentCalendarDate.getMonth() + 1);
+                renderCalendar(containerId, onSelectDate);
+            });
+
+            // Date selection
+            container.querySelectorAll('.calendar-date').forEach(el => {
+                if (!el.classList.contains('booked') && !el.classList.contains('past')) {
+                    el.addEventListener('click', () => {
+                        const dateStr = el.getAttribute('data-date');
+                        if (dateStr && onSelectDate) {
+                            onSelectDate(dateStr);
+                        }
+                    });
+                    el.addEventListener('keydown', (e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            el.click();
+                        }
+                    });
+                }
+            });
+        }
+
+        // ==== Netlify Form Submission ====
+        const form = document.getElementById('inquiry-form');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const btn = document.getElementById('submit-btn');
+            const btnText = document.getElementById('btn-text');
+            const btnLoading = document.getElementById('btn-loading');
+
+            btnText.style.display = 'none';
+            btnLoading.style.display = 'inline-block';
+            btn.disabled = true;
+
+            try {
+                const response = await fetch('/', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: new URLSearchParams(new FormData(form)).toString()
+                });
+
+                if (response.ok) {
+                    form.reset();
+                    document.getElementById('event-date').value = '';
+                    alert('✅ Thank you! Your booking request was sent. We\'ll contact you within 24 hours via WhatsApp or email.');
+                    if (activeModal) {
+                        closeModal(activeModal);
+                    }
+                } else {
+                    throw new Error('Submission failed');
+                }
+            } catch (err) {
+                alert('⚠️ Sorry, there was an issue. Please try again or WhatsApp us directly at +233 55 123 4567.');
+                console.error('Error:', err);
+            } finally {
+                btnText.style.display = 'inline';
+                btnLoading.style.display = 'none';
+                btn.disabled = false;
+            }
+        });
+
+        // ==== Smooth Scrolling ====
+        document.querySelectorAll('a[href^="#"]:not([href="#"]):not([href^="#inquiry-modal"]):not([href^="#calendar-modal"])').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                    
+                    // Close mobile menu if open
+                    if (mobileNav.classList.contains('active')) {
+                        mobileNav.classList.remove('active');
+                        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                        const icon = mobileMenuBtn.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
