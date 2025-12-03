@@ -121,12 +121,13 @@
             padding: 8px;
             border-radius: 4px;
             transition: var(--transition);
+            cursor: pointer;
         }
         .mobile-menu-btn:hover, .mobile-menu-btn:focus {
             background: rgba(255,255,255,0.1);
         }
         .nav-mobile { 
-            display: none; 
+            display: flex; 
             position: absolute; 
             top: 100%; 
             left: 0; 
@@ -138,7 +139,8 @@
             border-top: 1px solid rgba(212, 175, 55, 0.2);
             backdrop-filter: blur(10px);
         }
-        .nav-mobile.active { display: flex; }
+        .nav-mobile.active { 
+            max-height: 500px; }
         .nav-mobile a { 
             padding: 0.8rem 0; 
             font-weight: 500; 
@@ -673,7 +675,7 @@
 
     <a href="#main" class="skip-link">Skip to main content</a>
 
-    <header class="header">
+    <header class="sticky-header">
         <a href="https://paradisekitchensuk.netlify.app/" class="logo" aria-label="Paradise Kitchen homepage">
             <img src="https://image2url.com/images/1764506411486-831da419-dfef-45d1-9985-ca73bb6a0320.jpg" alt="Paradise Kitchen Logo" width="180" height="180">
         </a>
@@ -1215,6 +1217,7 @@
 </body>
 
 </html>
+
 
 
 
