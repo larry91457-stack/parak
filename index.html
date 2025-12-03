@@ -91,12 +91,12 @@
         .sticky-header {
             background: rgba(26, 26, 26, 0.98);
             padding: 1rem 5%;
-            position: static; top: 0; z-index: 1000;
-            overflow: visible;
+            position: relative; top: 0;
             display: static; justify-content: space-between; align-items: center;
             border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-            z-index: 1000;
             backdrop-filter: blur(10px);
+            overflow: visible;
+            z-index: 1000;
         }
         .logo img { height: 180px; width: 180px; }
         .nav-desktop { display: flex; gap: 2rem; margin-left:auto; }
@@ -134,17 +134,21 @@
             top: 100%; 
             left: 0; 
             width: 100%; 
-            z-index: 999;
             background: rgba(26, 26, 26, 0.98); 
             flex-direction: column; 
             padding: 1rem; 
             text-align: center; 
             border-top: 1px solid rgba(212, 175, 55, 0.2);
             backdrop-filter: blur(10px);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            z-index: 999;
         }
         .nav-mobile.active { 
             display: flex;
-            max-height: 900px; 
+            max-height: 500px;
+            z-index: 999;
         }
         .nav-mobile a { 
             padding: 0.8rem 0; 
@@ -1222,6 +1226,7 @@
 </body>
 
 </html>
+
 
 
 
