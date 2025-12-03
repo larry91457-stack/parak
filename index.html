@@ -92,8 +92,10 @@
             background: rgba(26, 26, 26, 0.98);
             padding: 1rem 5%;
             position: static; top: 0; z-index: 1000;
+            overflow: visible;
             display: flex; justify-content: space-between; align-items: center;
             border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            z-index: 1000;
             backdrop-filter: blur(10px);
         }
         .logo img { height: 180px; width: 180px; }
@@ -132,6 +134,7 @@
             top: 100%; 
             left: 0; 
             width: 100%; 
+            z-index: 999;
             background: rgba(26, 26, 26, 0.98); 
             flex-direction: column; 
             padding: 1rem; 
@@ -1219,6 +1222,7 @@
 </body>
 
 </html>
+
 
 
 
