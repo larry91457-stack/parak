@@ -88,10 +88,10 @@
         }
         .skip-link:focus { top: 6px; }
 
-        .sticky-header {
+        .header {
             background: rgba(26, 26, 26, 0.98);
             padding: 1rem 5%;
-            position: sticky; top: 0; z-index: 1000;
+            position: flexible; top: 0; z-index: 1000;
             display: flex; justify-content: space-between; align-items: center;
             border-bottom: 1px solid rgba(212, 175, 55, 0.2);
             backdrop-filter: blur(10px);
@@ -629,7 +629,7 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            .sticky-header { padding: 1rem; }
+            .header { padding: 1rem; }
             .nav-desktop { display: none; }
             .mobile-menu-btn { display: flex; }
             .hero h1 { font-size: 2.8rem; }
@@ -673,7 +673,7 @@
 
     <a href="#main" class="skip-link">Skip to main content</a>
 
-    <header class="sticky-header">
+    <header class="header">
         <a href="https://paradisekitchensuk.netlify.app/" class="logo" aria-label="Paradise Kitchen homepage">
             <img src="https://image2url.com/images/1764506411486-831da419-dfef-45d1-9985-ca73bb6a0320.jpg" alt="Paradise Kitchen Logo" width="180" height="180">
         </a>
@@ -1215,6 +1215,7 @@
 </body>
 
 </html>
+
 
 
 
