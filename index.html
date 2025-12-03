@@ -88,10 +88,10 @@
         }
         .skip-link:focus { top: 6px; }
 
-        .header {
+        .sticky-header {
             background: rgba(26, 26, 26, 0.98);
             padding: 1rem 5%;
-            position: flexible; top: 0; z-index: 1000;
+            position: static; top: 0; z-index: 1000;
             display: flex; justify-content: space-between; align-items: center;
             border-bottom: 1px solid rgba(212, 175, 55, 0.2);
             backdrop-filter: blur(10px);
@@ -126,7 +126,7 @@
             background: rgba(255,255,255,0.1);
         }
         .nav-mobile { 
-            display: flex; 
+            display: none; 
             position: absolute; 
             top: 100%; 
             left: 0; 
@@ -629,10 +629,10 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            .header { padding: 1rem; }
+            .sticky-header { padding: 1rem; }
             .nav-desktop { display: none; }
-            .nav-menu { display: flex; }
-            .mobile-menu-btn { display: flex; }
+            .mobile-menu-btn { display: block; }
+            .nav-mobile-btn { display: flex; }
             .hero h1 { font-size: 2.8rem; }
             .hero p { font-size: 1.1rem; }
             .hero-btns {
@@ -1216,6 +1216,7 @@
 </body>
 
 </html>
+
 
 
 
